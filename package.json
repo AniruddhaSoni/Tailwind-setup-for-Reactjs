@@ -20,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "watch:css": "TAILWIND_MODE=watch postcss src/styles/tailwind.pcss -o src/styles/output.css --watch",
+    "build:css": "postcss src/styles/tailwind.pcss -o src/styles/output.css --minify"
   },
   "eslintConfig": {
     "extends": [
